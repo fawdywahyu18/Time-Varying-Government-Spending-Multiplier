@@ -8,7 +8,7 @@ library(rlist)
 library(BVAR)
 
 # Interpolasi data PDB Nominal dan Deflator dgn variabel referensi M2 dan CPI
-setwd("E:/Kerja/Asisten Akademik/BKF Kemenkeu")
+setwd("")
 PdbNominal <- (read_excel("r_data_bkf.xlsx", sheet = "triwulan"))$gdp
 Deflator <- (read_excel("r_data_bkf.xlsx", sheet = "triwulan"))$deflator
 PdbNominal <- ts(PdbNominal, start=c(2010, 1), end=c(2020, 4), frequency=4)
